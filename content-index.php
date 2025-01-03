@@ -37,7 +37,8 @@
 					if ( is_search() ) {
 						the_excerpt();
 					} else {
-						the_content();
+						/* the_content(); */
+						the_excerpt();
 					}
 				?>
 				<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . esc_html__( 'Pages:', 'experimental-bootstrap-theme' ) . '</span>', 'after' => '</div>' ) ); ?>
